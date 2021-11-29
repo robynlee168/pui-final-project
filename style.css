@@ -1,0 +1,41 @@
+body {
+    background-image: url("nightsky.jpeg");
+    background-color: black;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.main-heading h1 {
+    font-family: 'Hoefler Text';
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-to {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-top: 7%;
+    margin-bottom: 2.5%;
+}
+
+.world-of-constellations {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 12px;
+}
+
+.dropdown {
+    color: white;
+    opacity: 20%;
+}
+
+.pick-season-dropdown {
+    font-family: 'SF Pro Rounded';
+    font-size: 30px; 
+    padding: 3px 130px 3px 15px;
+    color: white;
+}
+
+
