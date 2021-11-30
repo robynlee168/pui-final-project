@@ -5,12 +5,20 @@ body {
     background-size: cover; 
 }
 
-.main-heading h1 {
+.container h1{
     font-family: 'Hoefler Text';
     color: white;
     display: flex;
     justify-content: center;
 }
+
+
+/* .main-heading h1 {
+    font-family: 'Hoefler Text';
+    color: white;
+    display: flex;
+    justify-content: center;
+} */
 
 .welcome-to {
     font-size: 20px;
@@ -26,16 +34,33 @@ body {
     letter-spacing: 12px;
 }
 
-.dropdown {
+#season-select {
     color: white;
-    opacity: 20%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* opacity: 20%; */
+    height: 60px;
+    width: 730px;
+    padding: 0px 0px 0px 20px;
+    font-family: 'SF Pro Rounded';
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    border-radius: 3px;
+}
+
+.pick-season {
+    text-align: center;
 }
 
 .pick-season-dropdown {
-    font-family: 'SF Pro Rounded';
-    font-size: 30px; 
-    padding: 3px 130px 3px 15px;
-    color: white;
+    margin-top: 40px;
 }
 
+.dropdown {
+    margin-bottom: 40px;
+}
+
+.row img {
+    width: 330px;
+}
 
