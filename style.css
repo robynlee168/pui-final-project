@@ -61,12 +61,20 @@ body {
     margin-bottom: 40px;
 }
 
+.row {
+    display: none;
+}
+
 .row img {
     width: 330px;
 }
 
 .rectangle {
     background:rgba(255, 255, 255, 0.3);
-    height: 600px;
+    height: 580px;
     width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

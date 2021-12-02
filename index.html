@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- icons -->
     <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <!-- javascript -->
+    <script src="updatecards.js"></script>
 </head>
 
 <body>
@@ -24,21 +26,105 @@
         <h1 class="world-of-constellations">WORLD OF CONSTELLATIONS</h1>
     </div> -->
 
-    <div class="pick-season-dropdown">
-        <form class="pick-season">
-            <div class="dropdown">
-                <label for="season-select"> </label>
-                <select name="season" id="season-select">
-                    <option class="dropdown-label" value="">PICK A SEASON</option>
-                    <option value="spring">Spring</option>
-                    <option value="summer">Summer</option>
-                    <option value="fall">Fall</option>
-                    <option value="winter">Winter</option>
-                </select>
+        <div class="pick-season-dropdown">
+            <form class="pick-season">
+                <div class="dropdown">
+                    <label for="season-select"> </label>
+                    <select name="season" id="season-select" onchange="updateGallery()">
+                        <option value="none">PICK A SEASON</option>
+                        <option value="spring">Spring</option>
+                        <option value="summer">Summer</option>
+                        <option value="fall">Fall</option>
+                        <option value="winter">Winter</option>
+                    </select>
+                </div>
+
+                <!-- <input class="button" type="submit" value="Add to Cart"> -->
+            </form>
+        </div>
+        <div class="row">
+            <!-- all/most seasons-->
+            <div class="col-xl-3 col-md-6 spring summer fall winter">
+                <img src="ursa major.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring summer fall winter">
+                <img src="ursa minor.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring fall winter">
+                <img src="cassiopeia.png">
             </div>
 
-            <!-- <input class="button" type="submit" value="Add to Cart"> -->
-        </form>
+            <!-- spring constellations -->
+            <div class="col-xl-3 col-md-6 spring">
+                <img src="hydra.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring">
+                <img src="virgo.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring">
+                <img src="leo.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring">
+                 <img src="cancer.png">
+            </div>
+            <div class="col-xl-3 col-md-6 spring">
+                <img src="bootes.png">
+            </div>
+
+            <!-- summer constellations-->
+            <div class="col-xl-3 col-md-6 summer">
+                <img src="aquila.png">
+            </div>
+            <div class="col-xl-3 col-md-6 summer">
+                <img src="cygnus.png">
+            </div>
+            <div class="col-xl-3 col-md-6 summer">
+                <img src="lyra.png">
+            </div>
+            <div class="col-xl-3 col-md-6 summer">
+                <img src="sagittarius.png">
+            </div>
+            <div class="col-xl-3 col-md-6 summer">
+                 <img src="scorpius.png">
+            </div>
+            <div class="col-xl-3 col-md-6 summer">
+                <img src="hercules.png">
+            </div>
+
+            <!-- fall constellations -->
+            <div class="col-xl-3 col-md-6 fall">
+                <img src="andromeda.png">
+            </div>
+            <div class="col-xl-3 col-md-6 fall">
+                <img src="aquarius.png">
+            </div>
+            <div class="col-xl-3 col-md-6 fall">
+                <img src="capricornus.png">
+            </div>
+            <div class="col-xl-3 col-md-6 fall">
+                 <img src="pegasus.png">
+            </div>
+            <div class="col-xl-3 col-md-6 fall">
+                <img src="pisces.png">
+            </div>
+
+            <!-- winter constellations -->
+            <div class="col-xl-3 col-md-6 winter">
+                <img src="orion.png">
+            </div>
+            <div class="col-xl-3 col-md-6 winter">
+                <img src="the bull.png">
+            </div>
+            <div class="col-xl-3 col-md-6 winter">
+                <img src="gemini.png">
+            </div>
+            <div class="col-xl-3 col-md-6 winter">
+                 <img src="perseus.png">
+            </div>
+            <div class="col-xl-3 col-md-6 winter">
+                <img src="auriga.png">
+            </div>
+        </div>
     </div>
 
     <!--javascript-->
