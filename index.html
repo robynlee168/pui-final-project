@@ -16,113 +16,104 @@
     <script src="updatecards.js"></script>
 </head>
 
-<body>
+<body onload="updateCards();">
     <div class="container">
         <h1 class="welcome-to">WELCOME TO</h1>
         <h1 class="world-of-constellations text-center">WORLD OF CONSTELLATIONS</h1>
-    </div>
-    <!-- <div class="main-heading">
-        <h1 class="welcome-to">WELCOME TO</h1>
-        <h1 class="world-of-constellations">WORLD OF CONSTELLATIONS</h1>
-    </div> -->
-
         <div class="pick-season-dropdown">
-            <form class="pick-season">
-                <div class="dropdown">
-                    <label for="season-select"> </label>
-                    <select name="season" id="season-select" onchange="updateGallery()">
-                        <option value="none">PICK A SEASON</option>
-                        <option value="spring">Spring</option>
-                        <option value="summer">Summer</option>
-                        <option value="fall">Fall</option>
-                        <option value="winter">Winter</option>
-                    </select>
-                </div>
-
-                <!-- <input class="button" type="submit" value="Add to Cart"> -->
-            </form>
+            <div class="dropdown">
+                <label for="season-select"> </label>
+                <select name="season" id="season-select" onchange="updateCards()">
+                    <option value="none">PICK A SEASON</option>
+                    <option value="spring">SPRING</option>
+                    <option value="summer">SUMMER</option>
+                    <option value="fall">FALL</option>
+                    <option value="winter">WINTER</option>
+                </select>
+            </div>
         </div>
+    
         <div class="row">
             <!-- all/most seasons-->
-            <div class="col-xl-3 col-md-6 spring summer fall winter">
-                <a href="ursamajor.html"><img src="ursa major.png" alt="ursa major"></a>
+            <div class="col-lg-3 col-md-4 col-sm-6 spring summer fall winter">
+                <a href="ursamajor.html"><img class="img-fluid" src="ursa major.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring summer fall winter">
-                <img src="ursa minor.png" alt="ursa minor">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring summer fall winter">
+                <a href="ursaminor.html"><img class="img-fluid" src="ursa minor.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring fall winter">
-                <img src="cassiopeia.png" alt="cassiopeia">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring fall winter">
+                <a href="cassiopeia.html"><img class="img-fluid" src="cassiopeia.png"></a>
             </div>
 
             <!-- spring constellations -->
-            <div class="col-xl-3 col-md-6 spring">
-                <img src="hydra.png" alt="hydra">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring">
+                <a href="hydra.html"><img class="img-fluid" src="hydra.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring">
-                <img src="virgo.png" alt="virgo">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring">
+                <a href="virgo.html"><img class="img-fluid" src="virgo.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring">
-                <img src="leo.png" alt="leo">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring">
+                <a href="leo.html"><img class="img-fluid" src="leo.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring">
-                 <img src="cancer.png" alt="cancer">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring">
+                <a href="cancer.html"><img class="img-fluid" src="cancer.png"></a>
             </div>
-            <div class="col-xl-3 col-md-6 spring">
-                <img src="bootes.png" alt="bootes">
+            <div class="col-lg-3 col-md-4 col-sm-6 spring">
+                <a href="bootes.html"><img class="img-fluid" src="bootes.png"></a>
             </div>
 
             <!-- summer constellations-->
-            <div class="col-xl-3 col-md-6 summer">
-                <img src="aquila.png" alt="aquila">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                <img class="img-fluid" src="aquila.png">
             </div>
-            <div class="col-xl-3 col-md-6 summer">
-                <img src="cygnus.png" alt="cygnus">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                <img class="img-fluid" src="cygnus.png">
             </div>
-            <div class="col-xl-3 col-md-6 summer">
-                <img src="lyra.png" alt="lyra">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                <img class="img-fluid" src="lyra.png">
             </div>
-            <div class="col-xl-3 col-md-6 summer">
-                <img src="sagittarius.png" alt="sagittarius">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                <img class="img-fluid" src="sagittarius.png">
             </div>
-            <div class="col-xl-3 col-md-6 summer">
-                 <img src="scorpius.png" alt="scorpius">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                 <img class="img-fluid" src="scorpius.png">
             </div>
-            <div class="col-xl-3 col-md-6 summer">
-                <img src="hercules.png" alt="hercules">
+            <div class="col-lg-3 col-md-4 col-sm-6 summer">
+                <img class="img-fluid" src="hercules.png">
             </div>
 
             <!-- fall constellations -->
-            <div class="col-xl-3 col-md-6 fall">
-                <img src="andromeda.png" alt="andromeda">
+            <div class="col-lg-3 col-md-4 col-sm-6 fall">
+                <img class="img-fluid" src="andromeda.png">
             </div>
-            <div class="col-xl-3 col-md-6 fall">
-                <img src="aquarius.png" alt="aquarius">
+            <div class="col-lg-3 col-md-4 col-sm-6 fall">
+                <img class="img-fluid" src="aquarius.png">
             </div>
-            <div class="col-xl-3 col-md-6 fall">
-                <img src="capricornus.png" alt="capricornus">
+            <div class="col-lg-3 col-md-4 col-sm-6 fall">
+                <img class="img-fluid" src="capricornus.png">
             </div>
-            <div class="col-xl-3 col-md-6 fall">
-                 <img src="pegasus.png" alt="pegasus">
+            <div class="col-lg-3 col-md-4 col-sm-6 fall">
+                 <img class="img-fluid" src="pegasus.png">
             </div>
-            <div class="col-xl-3 col-md-6 fall">
-                <img src="pisces.png" alt="pisces">
+            <div class="col-lg-3 col-md-4 col-sm-6 fall">
+                <img class="img-fluid" src="pisces.png">
             </div>
 
             <!-- winter constellations -->
-            <div class="col-xl-3 col-md-6 winter">
-                <img src="orion.png" alt="orion">
+            <div class="col-lg-3 col-md-4 col-sm-6 winter">
+                <img class="img-fluid" src="orion.png">
             </div>
-            <div class="col-xl-3 col-md-6 winter">
-                <img src="the bull.png" alt="taurus">
+            <div class="col-lg-3 col-md-4 col-sm-6 winter">
+                <img class="img-fluid" src="the bull.png">
             </div>
-            <div class="col-xl-3 col-md-6 winter">
-                <img src="gemini.png" alt="gemini">
+            <div class="col-lg-3 col-md-4 col-sm-6 winter">
+                <img class="img-fluid" src="gemini.png">
             </div>
-            <div class="col-xl-3 col-md-6 winter">
-                 <img src="perseus.png" alt="perseus">
+            <div class="col-lg-3 col-md-4 col-sm-6 winter">
+                 <img class="img-fluid" src="perseus.png">
             </div>
-            <div class="col-xl-3 col-md-6 winter">
-                <img src="auriga.png" alt="aurgia">
+            <div class="col-lg-3 col-md-4 col-sm-6 winter">
+                <img class="img-fluid" src="auriga.png">
             </div>
         </div>
     </div>
